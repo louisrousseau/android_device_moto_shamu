@@ -398,7 +398,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.speaker=false
 
 # OEM Unlock reporting
-ADDITIONAL_DEFAULT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.oem_unlock_supported=1
 
 # ro.product.first_api_level indicates the first api level the device has commercially launched on.
