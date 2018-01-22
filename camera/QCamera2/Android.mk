@@ -69,6 +69,20 @@ LOCAL_C_INCLUDES += \
         frameworks/native/include/media/hardware \
         device/moto/shamu/camera/QCamera2/HAL
 
+LOCAL_C_INCLUDES += \
+        system/libhidl/base/include \
+        system/libhidl/transport/token/1.0/utils/include \
+        system/core/base/include
+
+# TODO: Is there a cleaner way to add these include directories, without converting the whole thing to .bp?
+LOCAL_C_INCLUDES += \
+        frameworks/native/libs/nativewindow/include \
+        out/soong/.intermediates/hardware/interfaces/graphics/bufferqueue/1.0/android.hardware.graphics.bufferqueue@1.0_genc++_headers/gen \
+        out/soong/.intermediates/system/libhidl/transport/base/1.0/android.hidl.base@1.0_genc++_headers/gen \
+        out/soong/.intermediates/system/libhidl/transport/manager/1.0/android.hidl.manager@1.0_genc++_headers/gen \
+        out/soong/.intermediates/hardware/interfaces/graphics/common/1.0/android.hardware.graphics.common@1.0_genc++_headers/gen \
+        out/soong/.intermediates/hardware/interfaces/media/1.0/android.hardware.media@1.0_genc++_headers/gen
+
 LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 
 #LOCAL_STATIC_LIBRARIES := libqcamera2_util
