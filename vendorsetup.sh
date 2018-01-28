@@ -15,3 +15,5 @@
 #
 
 add_lunch_combo omni_shamu-userdebug
+add_lunch_combo omni_shamu-eng
+
