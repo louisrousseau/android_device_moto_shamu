@@ -40,7 +40,9 @@ LOCAL_C_INCLUDES+= \
         frameworks/native/include/media/openmax \
         $(LOCAL_PATH)/../common \
         $(LOCAL_PATH)/../../../mm-image-codec/qexif \
-        $(LOCAL_PATH)/../../../mm-image-codec/qomx_core
+        $(LOCAL_PATH)/../../../mm-image-codec/qomx_core \
+        system/core/liblog/include \
+        frameworks/ex/framesequence/jni
 
 LOCAL_C_INCLUDES+= $(kernel_includes)
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps)
@@ -104,7 +106,7 @@ endif
 LOCAL_CFLAGS += -Wall -Werror
 
 LOCAL_SHARED_LIBRARIES:= \
-         libcutils libdl libmmcamera_interface
+         libcutils libdl libmmcamera_interface liblog
 
 LOCAL_MODULE_TAGS := optional
 
