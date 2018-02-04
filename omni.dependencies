@@ -1,8 +1,8 @@
 [
   {
-    "remote": "omnirom",
+    "remote": "louisrousseau",
     "repository": "android_kernel_moto_shamu",
     "target_path": "kernel/moto/shamu",
-    "revision": "android-7.1"
+    "revision": "android-8.1"
   }
 ]
